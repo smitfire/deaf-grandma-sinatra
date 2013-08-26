@@ -5,5 +5,12 @@ get '/' do
 end
 
 post '/grandma' do
-  "Hello World"
+  @grandma = params[:user_input]
+  if @grandma == @grandma.upcase
+    @grandma = "Why are you yelling '" + @grandma + "'?"
+  else
+    @grandma = "Speak up, kiddo!"
+  end
+  erb :index
 end
+
