@@ -5,5 +5,5 @@ get '/' do
 end
 
 post '/grandma' do
-  "Implement the /grandma route yourself.<br>Params: <code>#{params.inspect}</code>"
+  "Hello World"
 end
